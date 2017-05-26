@@ -75,7 +75,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/19/Ajax-01/" data-id="cj356drn00002ycunseq7cxoo" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/19/Ajax-01/" data-id="cj356na69000070un4cjphisi" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -83,7 +83,7 @@
       
         <p>//查看chrome里的缓存文件6</p>
 <p>C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Cache</p>
-<p>##基本概念<br>1.访问网页原理?</p>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>1.访问网页原理?</p>
 <blockquote>
 <p>1.访问网页时是有真实的、物理的文件传输的<br>2.网页不是一个文件，而是一堆文件组成的<br>3.我们之所以平常感觉第二次访问比第一次访问快的原因就是，第一次访问时已经将所有文件缓存到了本地</p>
 </blockquote>
@@ -111,7 +111,7 @@
 <blockquote>
 <p>Server-U、FileZilla、VsFTP等；<br>数据库服务器软件：<br>Oracle、MySQL、PostgreSQL、MSSQL等；<br>邮件服务器软件：<br>Postfix、Sendmail等；<br>HTTP 服务器软件：<br>Apache、IIS、Tomcat、Nginx、NodeJS等；</p>
 </blockquote>
-<p>##HTTP服务器搭建<br>1.如何搭建Apache服务器?</p>
+<h2 id="HTTP服务器搭建"><a href="#HTTP服务器搭建" class="headerlink" title="HTTP服务器搭建"></a>HTTP服务器搭建</h2><p>1.如何搭建Apache服务器?</p>
 <blockquote>
 <p>1.双击提供的安装包<br>2.点击Next<br>3.选择安装路径(注意:路径中不要出现中文)<br>4.勾选两个方框,点击next继续安装<br>5.点击install开始安装<br>6.安装完毕以后点击finish即可启动wamp</p>
 </blockquote>
@@ -135,7 +135,7 @@
 <p>7.如何修改默认端口号?</p>
 <blockquote>
 <p>7.1在httpd.conf文件中搜索Listen , 改为你想要的数字即可<br>7.2重启WAMP<br>–&gt;</p>
-<p>##PHP基础<br>1.为什么要把网页放到服务器?<br>便于他人访问<br>便于更新内容<br>便于实现网站动态化</p>
+<h2 id="PHP基础"><a href="#PHP基础" class="headerlink" title="PHP基础"></a>PHP基础</h2><p>1.为什么要把网页放到服务器?<br>便于他人访问<br>便于更新内容<br>便于实现网站动态化</p>
 </blockquote>
 <p>2.如何让网站实现动态化<br>通过服务端编程语言实现</p>
 <blockquote>
@@ -150,16 +150,16 @@
 <blockquote>
 <p>php程序的执行结果<br>注意: 执行结果中有中文, 必须在php文件顶部设置<br>header(“content-type:text/html; charset=utf-8”);<br>浏览器访问http服务器,接收到响应时,会根据响应报文头的内容进行一些具体的操作,在php中,我们能够使用 header来设置这些内容</p>
 </blockquote>
-<p>##什么是C/S架构(Client/Server)</p>
-<blockquote>
+<h2 id="什么是C-S架构-Client-Server"><a href="#什么是C-S架构-Client-Server" class="headerlink" title="什么是C/S架构(Client/Server)"></a>什么是C/S架构(Client/Server)</h2><blockquote>
 <p>对于C/S架构,最为常见的例子就是网络游戏,例如”魔兽世界”如果不联网无法使用,你在软件内所做的所有操作通过互联网能够传递到其他玩家身上<br>优点:性能较高/界面酷炫/用户体验好<br>缺点:更新软件/重量级</p>
 </blockquote>
-<p>##什么是B/S架构(Browser/Server)</p>
-<blockquote>
+<h2 id="什么是B-S架构-Browser-Server"><a href="#什么是B-S架构-Browser-Server" class="headerlink" title="什么是B/S架构(Browser/Server)"></a>什么是B/S架构(Browser/Server)</h2><blockquote>
 <p>对于B/S架构, 现在所有的网站都是B/S架构,较为常见的例子有百度,淘宝,网易云音乐等等,所有只需要通过浏览器即可使用<br>优点:更新软件/轻量级/用户体验稍差<br>缺点:性能较低/兼容问题</p>
-<p>##HTTP请求头<br>User-Agent：浏览器的具体类型　　如：User-Agent：Mozilla/5.0 (Windows NT 6.1; rv:17.0) Gecko/20100101 Firefox/17.0<br>Accept：浏览器支持哪些数据类型　　如：Accept: text/html,application/xhtml+xml,application/xml;q=0.9;<br>Accept-Charset：浏览器采用的是哪种编码　　如：Accept-Charset: ISO-8859-1<br>Accept-Encoding：浏览器支持解码的数据压缩格式　　如：Accept-Encoding: gzip, deflate<br>Accept-Language：浏览器的语言环境　　如：Accept-Language zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3<br>Host：请求的主机名，允许多个域名同处一个IP地址，即虚拟主机。Host:www.520it.com<br>Connection：表示是否需要持久连接。Keep-Alive/close，HTTP1.1默认是持久连接，它可以利用持久连接的优点，当页面包含多个元素时（例如Applet，图片），显著地减少下载所需要的时间。要实现这一点，Servlet需要在应答中发送一个Content-Length头，最简单的实现方法是：先把内容写入ByteArrayOutputStream，然后在正式写出内容之前计算它的大小。如：Connection: Keep-Alive<br>Content-Length：表示请求消息正文的长度。对于POST请求来说Content-Length必须出现。<br>Content-Type：WEB服务器告诉浏览器自己响应的对象的类型和字符集。例如：Content-Type: text/html; charset=’gb2312’<br>Content-Encoding：WEB服务器表明自己使用了什么压缩方法（gzip，deflate）压缩响应中的对象。例如：Content-Encoding：gzip<br>Content-Language：WEB服务器告诉浏览器自己响应的对象的语言。<br>Cookie：最常用的请求头，浏览器每次都会将cookie发送到服务器上，允许服务器在客户端存储少量数据。<br>Referer：包含一个URL，用户从该URL代表的页面出发访问当前请求的页面。服务器能知道你是从哪个页面过来的。Referer: <a href="http://www.baidu.com/" target="_blank" rel="external">http://www.baidu.com/</a></p>
+<h2 id="HTTP请求头"><a href="#HTTP请求头" class="headerlink" title="HTTP请求头"></a>HTTP请求头</h2><p>User-Agent：浏览器的具体类型　　如：User-Agent：Mozilla/5.0 (Windows NT 6.1; rv:17.0) Gecko/20100101 Firefox/17.0<br>Accept：浏览器支持哪些数据类型　　如：Accept: text/html,application/xhtml+xml,application/xml;q=0.9;<br>Accept-Charset：浏览器采用的是哪种编码　　如：Accept-Charset: ISO-8859-1<br>Accept-Encoding：浏览器支持解码的数据压缩格式　　如：Accept-Encoding: gzip, deflate<br>Accept-Language：浏览器的语言环境　　如：Accept-Language zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3<br>Host：请求的主机名，允许多个域名同处一个IP地址，即虚拟主机。Host:www.520it.com<br>Connection：表示是否需要持久连接。Keep-Alive/close，HTTP1.1默认是持久连接，它可以利用持久连接的优点，当页面包含多个元素时（例如Applet，图片），显著地减少下载所需要的时间。要实现这一点，Servlet需要在应答中发送一个Content-Length头，最简单的实现方法是：先把内容写入ByteArrayOutputStream，然后在正式写出内容之前计算它的大小。如：Connection: Keep-Alive<br>Content-Length：表示请求消息正文的长度。对于POST请求来说Content-Length必须出现。<br>Content-Type：WEB服务器告诉浏览器自己响应的对象的类型和字符集。例如：Content-Type: text/html; charset=’gb2312’<br>Content-Encoding：WEB服务器表明自己使用了什么压缩方法（gzip，deflate）压缩响应中的对象。例如：Content-Encoding：gzip<br>Content-Language：WEB服务器告诉浏览器自己响应的对象的语言。<br>Cookie：最常用的请求头，浏览器每次都会将cookie发送到服务器上，允许服务器在客户端存储少量数据。<br>Referer：包含一个URL，用户从该URL代表的页面出发访问当前请求的页面。服务器能知道你是从哪个页面过来的。Referer: <a href="http://www.baidu.com/" target="_blank" rel="external">http://www.baidu.com/</a></p>
 </blockquote>
-<p>##HTTP响应头<br>Server:WEB 服务器表明自己是什么软件及版本等信息。例如：Server：Apache/2.0.61 (Unix)<br>Accept-Ranges:WEB服务器表明自己是否接受获取其某个实体的一部分（比如文件的一部分）的请求。bytes：表示接受，none：表示不接受<br>Content-Type:WEB 服务器告诉浏览器自己响应的对象的类型。例如：Content-Type：application/xml<br>Etag:就是一个对象（比如URL）的标志值，就一个对象而言，比如一个html文件，如果被修改了，其Etag也会别修改，所以，ETag的作用跟Last-Modified的作用差不多，主要供WEB服务器判断一个对象是否改变了。比如前一次请求某个html文件时，获得了其 ETag，当这次又请求这个文件时，浏览器就会把先前获得ETag值发送给WEB服务器，然后WEB服务器会把这个ETag跟该文件的当前ETag进行对比，然后就知道这个文件有没有改变了。<br>Allow:服务器支持哪些请求方法（如GET、POST等）<br>Location:表示客户应当到哪里去提取文档，用于将接收端定位到资源的位置（URL）上。Location通常不是直接设置的，而是通过HttpServletResponse的sendRedirect方法，该方法同时设置状态代码为302。<br>Content-Base:解析主体中的相对URL时使用的基础URL。<br>Content-Encoding:WEB服务器表明自己使用了什么压缩方法（gzip，deflate）压缩响应中的对象。例如：Content-Encoding：gzip<br>Content-Language:WEB 服务器告诉浏览器理解主体时最适宜使用的自然语言。<br>Content-Length:WEB服务器告诉浏览器自己响应的对象的长度或尺寸，例如：Content-Length: 26012<br>Content-Location:资源实际所处的位置。<br>Content-MD5:主体的MD5校验和。<br>Content-Range:实体头用于指定整个实体中的一部分的插入位置，他也指示了整个实体的长度。在服务器向客户返回一个部分响应，它必须描述响应覆盖的范围和整个实体长度。一般格式： Content-Range:bytes-unitSPfirst-byte-pos-last-byte-pos/entity-legth。例如，传送头500个字节次字段的形式：Content-Range:bytes0- 499/1234如果一个http消息包含此节（例如，对范围请求的响应或对一系列范围的重叠请求），Content-Range表示传送的范围，Content-Length表示实际传送的字节数。<br>Expires:WEB服务器表明该实体将在什么时候过期，对于过期了的对象，只有在跟WEB服务器验证了其有效性后，才能用来响应客户请求。是 HTTP/1.0 的头部。例如：Expires：Sat, 23 May 2009 10:02:12 GMT<br>Last-Modified:WEB服务器认为对象的最后修改时间，比如文件的最后修改时间，动态页面的最后产生时间等等。例如：Last-Modified：Tue, 06 May 2008 02:42:43 GMT</p>
+<h2 id="HTTP响应头"><a href="#HTTP响应头" class="headerlink" title="HTTP响应头"></a>HTTP响应头</h2><blockquote>
+<p>Server:WEB 服务器表明自己是什么软件及版本等信息。例如：Server：Apache/2.0.61 (Unix)<br>Accept-Ranges:WEB服务器表明自己是否接受获取其某个实体的一部分（比如文件的一部分）的请求。bytes：表示接受，none：表示不接受<br>Content-Type:WEB 服务器告诉浏览器自己响应的对象的类型。例如：Content-Type：application/xml<br>Etag:就是一个对象（比如URL）的标志值，就一个对象而言，比如一个html文件，如果被修改了，其Etag也会别修改，所以，ETag的作用跟Last-Modified的作用差不多，主要供WEB服务器判断一个对象是否改变了。比如前一次请求某个html文件时，获得了其 ETag，当这次又请求这个文件时，浏览器就会把先前获得ETag值发送给WEB服务器，然后WEB服务器会把这个ETag跟该文件的当前ETag进行对比，然后就知道这个文件有没有改变了。<br>Allow:服务器支持哪些请求方法（如GET、POST等）<br>Location:表示客户应当到哪里去提取文档，用于将接收端定位到资源的位置（URL）上。Location通常不是直接设置的，而是通过HttpServletResponse的sendRedirect方法，该方法同时设置状态代码为302。<br>Content-Base:解析主体中的相对URL时使用的基础URL。<br>Content-Encoding:WEB服务器表明自己使用了什么压缩方法（gzip，deflate）压缩响应中的对象。例如：Content-Encoding：gzip<br>Content-Language:WEB 服务器告诉浏览器理解主体时最适宜使用的自然语言。<br>Content-Length:WEB服务器告诉浏览器自己响应的对象的长度或尺寸，例如：Content-Length: 26012<br>Content-Location:资源实际所处的位置。<br>Content-MD5:主体的MD5校验和。<br>Content-Range:实体头用于指定整个实体中的一部分的插入位置，他也指示了整个实体的长度。在服务器向客户返回一个部分响应，它必须描述响应覆盖的范围和整个实体长度。一般格式： Content-Range:bytes-unitSPfirst-byte-pos-last-byte-pos/entity-legth。例如，传送头500个字节次字段的形式：Content-Range:bytes0- 499/1234如果一个http消息包含此节（例如，对范围请求的响应或对一系列范围的重叠请求），Content-Range表示传送的范围，Content-Length表示实际传送的字节数。<br>Expires:WEB服务器表明该实体将在什么时候过期，对于过期了的对象，只有在跟WEB服务器验证了其有效性后，才能用来响应客户请求。是 HTTP/1.0 的头部。例如：Expires：Sat, 23 May 2009 10:02:12 GMT<br>Last-Modified:WEB服务器认为对象的最后修改时间，比如文件的最后修改时间，动态页面的最后产生时间等等。例如：Last-Modified：Tue, 06 May 2008 02:42:43 GMT</p>
+</blockquote>
 <p><a href="http://baike.baidu.com/link?url=LarF3FUBzX-IU1BMZbwbxaC8oJPUSGOj3seQRNVSVbZ2F9A6BiE-Je0sxFwsQK8dFJkKH6VP_ghpK66p8C2Zvkdl9nABXBR8mIqZGJj_D59q6NJQwmw3GqjIx2bzAsEG" target="_blank" rel="external">状态码相关解释</a></p>
 
       
@@ -197,7 +197,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/17/文件模块获取/" data-id="cj356drnm0003ycunox7illvf" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/17/文件模块获取/" data-id="cj356na6r000470un8f191n3x" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -245,7 +245,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/13/last/" data-id="cj356drmq0000ycunpjkfektu" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/13/last/" data-id="cj356na6j000270unaecy17oj" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -287,7 +287,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/07/古诗/" data-id="cj356drmx0001ycunm3cxuzxe" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/07/古诗/" data-id="cj356na6o000370unr3m0gjln" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -330,7 +330,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/06/hello-world/" data-id="cj356drno0004ycuni0x5jb1f" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/06/hello-world/" data-id="cj356na6f000170unkzgemsp7" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
