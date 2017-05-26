@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   
   
+  <meta name="description" content="//查看chrome里的缓存文件6
+C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Cache
+##基本概念1.访问网页原理?
+
+1.访问网页时是有真实的、物理的文件传输的2.网页不是一个文件，而是一堆文件组成的3.我们之所以平常" />
+  
 
   
   
@@ -11,14 +17,18 @@
   
   
   
-  <title>人生如梦,梦如人生</title>
+  <title>Ajax-01 | 人生如梦,梦如人生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="人生如梦,梦如人生">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="//查看chrome里的缓存文件6 C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Cache ##基本概念1.访问网页原理?  1.访问网页时是有真实的、物理的文件传输的2.网页不是一个文件，而是一堆文件组成的3.我们之所以平常感觉第二次访问比第一次访问快的原因就是，第一次访问时已经将所有文件缓存到了本地  2.浏览器请求数据">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ajax-01">
+<meta property="og:url" content="http://yoursite.com/2017/05/19/Ajax-01/index.html">
 <meta property="og:site_name" content="人生如梦,梦如人生">
+<meta property="og:description" content="//查看chrome里的缓存文件6 C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Cache ##基本概念1.访问网页原理?  1.访问网页时是有真实的、物理的文件传输的2.网页不是一个文件，而是一堆文件组成的3.我们之所以平常感觉第二次访问比第一次访问快的原因就是，第一次访问时已经将所有文件缓存到了本地  2.浏览器请求数据">
+<meta property="og:updated_time" content="2017-05-26T01:22:08.077Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="人生如梦,梦如人生">
+<meta name="twitter:title" content="Ajax-01">
+<meta name="twitter:description" content="//查看chrome里的缓存文件6 C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Cache ##基本概念1.访问网页原理?  1.访问网页时是有真实的、物理的文件传输的2.网页不是一个文件，而是一堆文件组成的3.我们之所以平常感觉第二次访问比第一次访问快的原因就是，第一次访问时已经将所有文件缓存到了本地  2.浏览器请求数据">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -58,17 +68,15 @@
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
-  
-    <article id="post-Ajax-01" class="post-Ajax-01 post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-Ajax-01" class="post-Ajax-01 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
         
         
   
-    <h1 class="entry-title">
-      <a class="article-title" href="/2017/05/19/Ajax-01/">Ajax-01</a>
+    <h1 class="entry-title article-title">
+      Ajax-01
     </h1>
   
 
@@ -177,196 +185,20 @@
 </article>
 
 
-
-
-
-
-  
-    <article id="post-文件模块获取" class="post-文件模块获取 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2017/05/17/文件模块获取/">文件模块获取</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/17/文件模块获取/" data-id="cj356drnm0003ycunox7illvf" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="nodejs文件模块的获取"><a href="#nodejs文件模块的获取" class="headerlink" title="nodejs文件模块的获取"></a>nodejs文件模块的获取</h2><h3 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h3><p>核心模块可以通过例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">const http = equire(&apos;http&apos;);</div></pre></td></tr></table></figure></p>
-<p>其中引号之内的是核心模块的名称,文件模获取的方式一:直接根据需要导入文件的路径名来获取模块.例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">const foo = require(&apos;./module/foo.js&apos;);</div><div class="line">const bar = require(&apos;./module/bar.js&apos;);</div></pre></td></tr></table></figure></p>
-<p>通过require导入的模块实际上导入了模块的exports对象</p>
-<h3 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h3><p>如果在导入文件的时候不写路径那么他默认是到node_modules去加载<br>不跟系统的模块命名一样<br>先读取package.json文件下面去去配置项的Main<br>如果没有package.json会加载一个叫index.js, 如果都不存在就报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">const bar = require(&apos;bar&apos;);</div></pre></td></tr></table></figure></p>
-<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><p>node_modules文件夹可以放在与引用模块文件同级目录,也可以上一级目录等等,存在位置呈递归排列使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(module.paths)</div></pre></td></tr></table></figure></p>
-<p>打印可以看出node_modules所有的路径.</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2017/05/17/文件模块获取/">
-    <time datetime="2017-05-17T11:32:22.000Z" class="entry-date">
-        2017-05-17
-    </time>
-</a>
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
     
     
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-last" class="post-last post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2017/05/13/last/">last</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/13/last/" data-id="cj356drmq0000ycunpjkfektu" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2017/05/13/last/">
-    <time datetime="2017-05-13T10:57:22.000Z" class="entry-date">
-        2017-05-13
-    </time>
-</a>
+        <span class="nav-next"><a href="/2017/05/17/文件模块获取/" rel="next">文件模块获取 <span class="meta-nav">→</span></a></span>
     
-    
-    </footer>
-</article>
+</nav><!-- .nav-single -->
 
 
 
 
 
 
-  
-    <article id="post-古诗" class="post-古诗 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2017/05/07/古诗/">古诗</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/07/古诗/" data-id="cj356drmx0001ycunm3cxuzxe" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>##《念奴娇 赤壁怀古》<br>大江东去，浪淘尽，千古风流人物。<br>故垒西边，人道是，三国周郎赤壁。<br>乱石穿空，惊涛拍岸，卷起千堆雪。<br>江山如画，一时多少豪杰。<br>遥想公瑾当年，小乔初嫁了，雄姿英发。<br>羽扇纶巾，谈笑间，樯橹灰飞烟灭。(樯橹 一作：强掳)<br>故国神游，多情应笑我，早生华发。<br>人生如梦，一尊还酹江月。(人生 一作：人间；尊 通：樽)</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2017/05/07/古诗/">
-    <time datetime="2017-05-07T02:06:24.000Z" class="entry-date">
-        2017-05-07
-    </time>
-</a>
-    
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="post-hello-world post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2017/05/06/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/05/06/hello-world/" data-id="cj356drno0004ycuni0x5jb1f" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2017/05/06/hello-world/">
-    <time datetime="2017-05-06T13:37:27.270Z" class="entry-date">
-        2017-05-06
-    </time>
-</a>
-    
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-  
 
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
